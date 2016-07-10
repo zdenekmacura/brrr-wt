@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "cz.stopdomesticviolence"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Sbližujeme - Rychlé rande</name>
+
+    <description>
+        Sbližujeme - Rychlé rande
+    </description>
+
+    <author href="http://www.sblizujeme.cz" email="zdenek.macura@email.cz">
+        Zdenek Macura
+    </author>
+    <gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
+    <content src="index.html" />
+
+</widget>

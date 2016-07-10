@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/sblizujeme.css" />
+   </head>
+   <body class="ScrollView">
+ 
+      <div class="MainBackground">
+         <img class="HeadImg" src="./img/sblizujeme2.png"/ border="2px">
+         <div class="TextView">
+            <div class="DivText"><b>Vítejte</b></br> U nás se můžete osobně setkat se zajímavými lidmi. Najít přátele, lásku, partnera. Stačí udělat tři kroky:</div>
+         </div>
+         <div class="StepsBackground">
+         <div class="TextViewStep" id="ShowCreateProfile">Krok 1 - Vytvoř profil</div>
+         <div class="StepCreateProfile" id="CreateProfile">
+                  
+
+            <form class="RegistrationForm" method="post" id="profileForm">
+            
+            <table class="TableProfile" id="profiletable1" >
+            <tr><td colspan="2" valign="middle"> 
+            <div id="email_error_message" class="ErrorMessage">error message</div>
+            <label>Email (Login) *</label>
+            <input id="emailLogin" type="text" class="InputField"  maxlength="45" size="22" name="email_profile" value="" />
+            </td></tr>
+
+            <tr><td>
+            <div id="sex_error_message" class="ErrorMessage">error message</div>
+            <label  for="form-registration-form-sex">Pohlaví <span>*</span> </label>
+            </td><td>
+            <select  id="form-registration-form-sex" name="sex" class="InputField">
+                <option value="0" >vyberte</option><option value="M" >muž</option>
+                <option value="Z" >žena</option>
+            </select>
+            </td></tr>
+
+            <tr><td colspan="2">
+            <div id="password_error_message" class="ErrorMessage">error message</div>
+            <label  for="form-registration-form-password">Heslo <span>*</span> </label>
+            <input type="password" autocomplete="off" class="InputField" id="form-registration-form-password" name="password" value="" />
+            </td></tr>
+
+            <tr><td colspan="2">
+            <label  for="form-registration-form-password_checker">Kontrola hesla <span>*</span> </label>
+            <input type="password" class="InputField" autocomplete="off" id="form-registration-form-password_checker" name="password_checker" >
+            </td></tr>
+
+            <tr><td colspan="2">
+            <div id="phone_error_message" class="ErrorMessage">error message</div>
+            <label  for="form-registration-form-phone">Mobilní číslo <span>*</span> </label>
+            <labelright class="PhoneNumber"><label>+420</label>
+            <input type="text" class="InputField" name="phone" value="" maxlength="9" size="9" id="phoneNumber"/></labelright></td></tr>
+
+            <tr><td colspan="2"><input class="InputField NextButton" style="" type="button"  name="nextPage" value="Další údaje ->" id="nextPageProfile1"/>
+            </td></tr>
+            </table>
+
+            <table class="TableProfile" id="profiletable2">
+            
+            <tr><td colspan="2"> <input class="InputField">
+
+            <label  for="form-registration-form-login">Email (Login)<span>*</span></label>
+            <div id="email_error_message2" class="ErrorMessage">error message</div><input class"InputField" id="emailLogin2" type="text"  maxlength="50" size="30" name="email_profile" value="" />
+            </td></tr>
+            </table>
+            </form> 
+
+
+
+        </div>
+        </div>
+        </div>
+
+
+      <!--<div class="TextViewSmaller">Designed and developed by Zdeněk Macura ( zdenek.macura@email.cz )</div>-->
+      </div>
+  
+   
+   <script src="cordova.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/sblizujeme.js"></script>
+
+   </body>
+
+</html>
